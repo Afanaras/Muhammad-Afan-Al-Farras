@@ -1,0 +1,10 @@
+from pathlib import Path
+
+contents = input("masukkan nama anda: ")
+
+path = Path('C:/Users/HP/Downloads/guest.txt')
+
+path.write_text(contents)
+
+print("Lokasi file:", path.resolve())
+print("Isi file:", path.read_text())
